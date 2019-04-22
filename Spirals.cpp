@@ -109,9 +109,9 @@ void Spirals::setBlossom (){
     pinchY = ofMap (ofNoise (timer), 0, 1, 0, 1);
     
     //Color and lifeSpan
-    float color1 = ofMap (value, -1, 1, rV + 50, rV - 50); // gets the contructor red value
-    float color2 = 0;
-    float color3 = ofMap (value, -1, 1, bV + 50, bV - 50); // gets the contructor blue value
+    float color1 = 255; // gets the contructor red value
+    float color2 = 255;
+    float color3 = 255; // gets the contructor blue value
     life = ofMap (value, -1, 1, lifeSpan, 150);
     ofSetColor(color1, color2, color3, life);
 
@@ -132,7 +132,7 @@ void Spirals::drawTree(){
     float value = sin (timer);
     
     // Scale and Rotate
-    float Scale = ofMap (ofNoise (timer), 0, 1, 0.45, 0.55);
+    float Scale = ofMap (ofNoise (timer), 0, 1, 0.45, 0.75);
     float Scl = pow (Scale, 4.0f);
     // raises to the 4th power the scale slider value > control small values of the Scl scale more precisely
     ofScale (Scl, Scl); // scale of the coordinate system
