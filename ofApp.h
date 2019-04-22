@@ -2,8 +2,6 @@
 
 #include "ofMain.h"
 #include "Spirals.h"
-#include "Flowers.h"
-#include "Bush.h"
 #include "ofxOsc.h"
 #include <vector>
 
@@ -36,10 +34,9 @@ class ofApp : public ofBaseApp{
     float valueF;
     float k1, k2, k3, k4, k5;
     int nFlo, nFr0, nFr1, nFr2;
-    bool drawTree, drawBush, drawFlower;
+    bool drawTree;
 
 // Vectors
     std::vector <Spirals*> trees;
-    std::vector <Flowers*> flowers;
-    std::vector <Bushes*> bushes;
+
 };
