@@ -61,7 +61,7 @@ private:
     float Background;
     
     
-    //Ajust the geometric primitive's drawing parameters
+//Ajust the geometric primitive's drawing parameters
     float shiftY, rotate; // two float sliders
     ofVec2f size; // ofxVec2Slider size; // 2D slider's size parameter
     ofColor color;
@@ -74,8 +74,7 @@ private:
     // Animation
     float phase;
     float value;
-    
-    bool Singing;
+
 
 
 
